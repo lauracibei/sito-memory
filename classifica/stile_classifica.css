@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #0F103B;  
+    background-position: center;  
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.classifica-tabella {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0 10px;    
+    margin-top: 10px;
+    color: #fff;
+}
+
+.classifica-tabella th {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6E6AEB;
+    border-bottom: 2px solid #6E6AEB;
+    opacity: 0.8;
+}
+
+.classifica-tabella td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.classifica-tabella td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.classifica-tabella td {
+    padding: 15px 20px;
+}
+
+.classifica-tabella tr.rank-1 td {
+    color: #FFD700;
+    font-weight: bold;
+    border-left: 4px solid #FFD700; 
+}
+
+.classifica-tabella tr.rank-2 td {
+    color: #C0C0C0;
+    font-weight: bold;
+    border-left: 4px solid #C0C0C0;
+}
+
+.classifica-tabella tr.rank-3 td {
+    color: #CD7F32;
+    font-weight: bold;
+    border-left: 4px solid #CD7F32;
+}
+
+.contenitore-classifica {
+    width: 100%;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;   
+    text-align: center;
+}
+
+.barra-superiore {
+    width: 100%;
+    height: 60px;
+    background-color: #6D6BEB;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    padding: 0 20px;          
+    box-sizing: border-box;    
+    margin-bottom: 20px;      
+}
+
+.bottone-barra-sup {
+    width: 40px; 
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-size: contain; 
+    transition: transform 0.2s ease; 
+}
+
+.bottone-barra-sup:hover {
+    transform: scale(1.1);
+}
+
+.bottone-homepage { 
+    background-image: url('../immagini/gioco2.png'); 
+}
+
+footer {
+    background-color: #131317;
+    color: #ffffff;
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .contenitore-classifica {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    .classifica-tabella {
+        border-spacing: 0 5px; 
+    }
+
+    .classifica-tabella th, 
+    .classifica-tabella td {
+        padding: 10px 5px; 
+        font-size: 0.9rem; 
+    }
+
+    .classifica-tabella th:nth-child(2),
+    .classifica-tabella td:nth-child(2) {
+        text-align: center;
+        width: 20%; 
+    }
+
+    @media screen and (max-width: 400px) {
+        .classifica-tabella th {
+            font-size: 0.8rem;
+            letter-spacing: 0; 
+        }
+    }
+}
