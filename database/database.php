@@ -2,9 +2,9 @@
     mysqli_report(MYSQLI_REPORT_OFF);
 
     $servername = "localhost";
-    $username = "s6403311";
-    $password = "ServerSAW2526";
-    $dbname = "s6403311";
+    $username = "your username";
+    $password = "your password";
+    $dbname = "your dbname";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
     if ($conn->connect_errno) {
